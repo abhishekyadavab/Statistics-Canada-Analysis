@@ -52,16 +52,14 @@ This project analyzes and visualizes Statistics Canada data in three thematic do
 ---
 
 ## 📁 Project Structure
+
 StatsCanadaAnalysis/
-├── data/                         # Raw datasets from Statistics Canada
-├── scripts/                      # R scripts for analysis & visualization
-├── output/                       # Final plots and infographic
-├── README.md                     # This file
-├── .gitignore                    # Ignored files
-└── StatsCanadaAnalysis.Rproj     # RStudio project file
-
-
----
+├── data/ # Raw datasets from Statistics Canada
+├── scripts/ # R scripts for analysis & visualization
+├── output/ # Final plots and infographic
+├── README.md # This file
+├── .gitignore # Ignored files
+└── StatsCanadaAnalysis.Rproj # RStudio project file
 
 ## 🎨 Visualizations and Insights
 
