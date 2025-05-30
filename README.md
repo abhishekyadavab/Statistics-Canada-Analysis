@@ -60,53 +60,75 @@ StatsCanadaAnalysis/
 ├── .gitignore                    # Ignored files
 └── StatsCanadaAnalysis.Rproj     # RStudio project file
 
+
+---
+
 ## 🎨 Visualizations and Insights
 
-### 1. Health Domain 🩺  
-**Key Insight**: Quebec reports the highest life expectancy (71.6 years), while Newfoundland is the lowest (66.3 years).  
-**Mental Health**: 20.7% of Canadians reported poor mental health in 2023.  
-**Activity Trends**: Varying adherence to physical activity guidelines (2016–2021).  
+### 1. Health Domain 🩺
 
-📂 **Scripts**:  
-- [`health.R`](scripts/health.R)  
-- [`health 24 hours.R`](scripts/health%2024%20hours.R)  
+**Key Discoveries**:
+- 🧬 Quebec shows the highest life expectancy (71.6 years); Newfoundland the lowest (66.3).
+- 🧠 Mental health reports are concerning: 20.7% of Canadians reported poor mental health in 2023.
+- 🏃‍♂️ Physical activity guideline adherence dropped between 2016–2021.
 
-🖼️ **Output**:  
-- ![Health Output](output/unified_health_analysis.png)  
-  [View Full Image](output/unified_health_analysis.png)
+📂 **Scripts**:
+- [`health.R`](scripts/health.R): Life expectancy and mental health by province
+- [`health 24 hours.R`](scripts/health%2024%20hours.R): Physical activity adherence over time
+
+🖼️ **Output**:
+- ![Health Output](output/unified_health_analysis.png)
 
 ---
-nvironment Domain 🌱  
-**Air Quality**: Improved from 63% (2005) to 85% (2019), but dropped to 74% in 2020.  
-**GHG Emissions**: Peaked in 2007 at 774 Mt CO₂ eq; declined to 694 Mt by 2023.  
-**Water Usage**: Consistent variations across provinces and years.
 
-📂 **Scripts**:  
-- [`environment.R`](scripts/environment.R)  
-- [`water usage.R`](scripts/water%20usage.R)
+### 2. Environment Domain 🌱
 
-🖼️ **Output**:  
+**Key Discoveries**:
+- 🌫️ Air quality improved from 63% in 2005 to 85% in 2019, but dropped post-COVID (2020).
+- 🌍 GHG emissions peaked in 2007 and have since slowly declined.
+- 💧 Water use is relatively stable but varies significantly across regions.
+
+📂 **Scripts**:
+- [`environment.R`](scripts/environment.R): Combines AQI and GHG emissions
+- [`water usage.R`](scripts/water%20usage.R): Water consumption by sector over years
+
+🖼️ **Output**:
 <p align="center">
-  <img src="output/environment_plot.png" alt="Environment Plot" width="600"/><br>
-  <em>Environment Plot</em>
+  <img src="output/infographic.png" alt="Environment Infographic" width="600"/><br>
+  <em>Environment + Water Usage Infographic</em>
 </p>
 
-<p align="center">
-  <img src="output/water_usage.png" alt="Water Usage Plot" width="600"/><br>
-  <em>Water Usage Plot</em>
-</p>
 ---
 
-### 3. Social Connectedness Domain 🤝  
-**Belonging**: Alberta scores highest (66.9%); Newfoundland lowest (51.9%).  
-**Support Network**: British Columbia leads with 68.6% of people having someone to count on.
+### 3. Social Connectedness Domain 🤝
 
-📂 **Scripts**:  
-- [`social.R`](scripts/social.R)  
-- [`sense of belonging.R`](scripts/sense%20of%20belonging.R)
+**Key Discoveries**:
+- 🏘️ Alberta has the highest community belonging score (66.9%); Newfoundland the lowest (51.9%).
+- 🙋‍♀️ British Columbia leads in emotional support, with 68.6% saying they have someone to count on.
+- 👥 Gender differences are also notable in perceived belonging and trust.
 
-🖼️ **Output**:  
-![Social Connectedness Plot](output/Social_Connectedness_Dot_Plot.png)
+📂 **Scripts**:
+- [`social.R`](scripts/social.R): Belonging to Canada by gender/year
+- [`sense of belonging.R`](scripts/sense%20of%20belonging.R): Dot plot of community belonging vs. support
+
+🖼️ **Output**:
+- ![Social Connectedness Plot](output/Social_Connectedness_Dot_Plot.png)
+
+---
+
+## 📌 Key Takeaways & Recommendations
+
+### 🩺 Health
+- **Policy Recommendation**: Invest in mental health initiatives, especially in provinces like Newfoundland where life expectancy and reported well-being are low.
+- **Actionable Insight**: Promote physical activity through targeted regional programs, especially for age groups showing decline.
+
+### 🌱 Environment
+- **Policy Recommendation**: Continue investing in clean energy to reduce GHG emissions.
+- **Actionable Insight**: Monitor post-pandemic air quality dips and explore why CAAQS compliance fell.
+
+### 🤝 Social Connectedness
+- **Policy Recommendation**: Community belonging and emotional support must be addressed in Atlantic provinces.
+- **Actionable Insight**: Gender-based emotional health initiatives could close the gap in perceived support systems.
 
 ---
 
@@ -129,12 +151,11 @@ All datasets are publicly available from **Statistics Canada**:
 - [Someone to Count On (4510005001)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510005001)
 - [Belonging to Canada (4510007701)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510007701)
 
-
 ---
 
 ## 🙏 Acknowledgments  
-- Data provided by **Statistics Canada** and the **Canadian Community Health Survey**  
-- Visualizations created using R (`ggplot2`, `patchwork`, `readr`, etc.)
+- Datasets provided by **Statistics Canada** and the **Canadian Community Health Survey**  
+- Visualizations built using `ggplot2`, `patchwork`, and `readr` in RStudio
 
 ---
 
@@ -144,3 +165,8 @@ All datasets are publicly available from **Statistics Canada**:
 📧 abhishekyadav23122002@gmail.com  
 📞 +1 226-201-0011  
 🔗 [LinkedIn](https://www.linkedin.com/in/abhishekyadavab) | [GitHub](https://github.com/abhishekyadavab)
+
+---
+
+> *“Turning public data into public insight — one chart at a time.”*
+
