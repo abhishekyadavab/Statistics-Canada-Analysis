@@ -76,37 +76,37 @@ StatsCanadaAnalysis/
   [View Full Image](output/unified_health_analysis.png)
 
 ---
-
-### 2. Environment Domain 🌱  
+nvironment Domain 🌱  
 **Air Quality**: Improved from 63% (2005) to 85% (2019), but dropped to 74% in 2020.  
 **GHG Emissions**: Peaked in 2007 at 774 Mt CO₂ eq; declined to 694 Mt by 2023.  
-**Water Usage**: Consistent variations across provinces and years.  
+**Water Usage**: Consistent variations across provinces and years.
 
 📂 **Scripts**:  
 - [`environment.R`](scripts/environment.R)  
 - [`water usage.R`](scripts/water%20usage.R)
 
 🖼️ **Output**:  
-- ![Environment](output/environment_plot.png)  
-  [View Full Image](output/environment_plot.png)  
-- ![Water Usage](output/water_usage.png)  
-  [View Full Image](output/water_usage.png)
+<p align="center">
+  <img src="output/environment_plot.png" alt="Environment Plot" width="600"/><br>
+  <em>Environment Plot</em>
+</p>
 
+<p align="center">
+  <img src="output/water_usage.png" alt="Water Usage Plot" width="600"/><br>
+  <em>Water Usage Plot</em>
+</p>
 ---
 
 ### 3. Social Connectedness Domain 🤝  
 **Belonging**: Alberta scores highest (66.9%); Newfoundland lowest (51.9%).  
-**Support Network**: British Columbia leads with 68.6% of people having someone to count on.  
+**Support Network**: British Columbia leads with 68.6% of people having someone to count on.
 
 📂 **Scripts**:  
 - [`social.R`](scripts/social.R)  
 - [`sense of belonging.R`](scripts/sense%20of%20belonging.R)
 
 🖼️ **Output**:  
-- ![Social](output/social_connectedness_dot_plot.png)  
-  [View Full Image](output/social_connectedness_dot_plot.png)
-
-
+![Social Connectedness Plot](output/Social_Connectedness_Dot_Plot.png)
 
 ---
 
