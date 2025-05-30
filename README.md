@@ -52,6 +52,13 @@ This project analyzes and visualizes Statistics Canada data in three thematic do
 ---
 
 ## 📁 Project Structure
+StatsCanadaAnalysis/
+├── data/                         # Raw datasets from Statistics Canada
+├── scripts/                      # R scripts for analysis & visualization
+├── output/                       # Final plots and infographic
+├── README.md                     # This file
+├── .gitignore                    # Ignored files
+└── StatsCanadaAnalysis.Rproj     # RStudio project file
 
 ## 🎨 Visualizations and Insights
 
@@ -60,8 +67,13 @@ This project analyzes and visualizes Statistics Canada data in three thematic do
 **Mental Health**: 20.7% of Canadians reported poor mental health in 2023.  
 **Activity Trends**: Varying adherence to physical activity guidelines (2016–2021).  
 
-📂 **Scripts**: `health.R`, `health 24 hours.R`  
-🖼️ **Output**: `unified_health_analysis.png`
+📂 **Scripts**:  
+- [`health.R`](scripts/health.R)  
+- [`health 24 hours.R`](scripts/health%2024%20hours.R)  
+
+🖼️ **Output**:  
+- ![Health Output](output/unified_health_analysis.png)  
+  [View Full Image](output/unified_health_analysis.png)
 
 ---
 
@@ -70,8 +82,15 @@ This project analyzes and visualizes Statistics Canada data in three thematic do
 **GHG Emissions**: Peaked in 2007 at 774 Mt CO₂ eq; declined to 694 Mt by 2023.  
 **Water Usage**: Consistent variations across provinces and years.  
 
-📂 **Scripts**: `environment.R`, `water usage.R`  
-🖼️ **Output**: `environment_plot.png`, `water_usage.png`
+📂 **Scripts**:  
+- [`environment.R`](scripts/environment.R)  
+- [`water usage.R`](scripts/water%20usage.R)
+
+🖼️ **Output**:  
+- ![Environment](output/environment_plot.png)  
+  [View Full Image](output/environment_plot.png)  
+- ![Water Usage](output/water_usage.png)  
+  [View Full Image](output/water_usage.png)
 
 ---
 
@@ -79,8 +98,15 @@ This project analyzes and visualizes Statistics Canada data in three thematic do
 **Belonging**: Alberta scores highest (66.9%); Newfoundland lowest (51.9%).  
 **Support Network**: British Columbia leads with 68.6% of people having someone to count on.  
 
-📂 **Scripts**: `social.R`, `sense of belonging.R`  
-🖼️ **Output**: `social_connectedness_dot_plot.png`
+📂 **Scripts**:  
+- [`social.R`](scripts/social.R)  
+- [`sense of belonging.R`](scripts/sense%20of%20belonging.R)
+
+🖼️ **Output**:  
+- ![Social](output/social_connectedness_dot_plot.png)  
+  [View Full Image](output/social_connectedness_dot_plot.png)
+
+
 
 ---
 
@@ -88,20 +114,21 @@ This project analyzes and visualizes Statistics Canada data in three thematic do
 
 All datasets are publicly available from **Statistics Canada**:
 
-### Health  
-- Life Expectancy: 1310037001  
-- Mental Health: 4510008001  
-- 24-Hour Guidelines: 1310082101  
+### 🩺 Health
+- [Life Expectancy (1310037001)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310037001)
+- [Mental Health (4510008001)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510008001)
+- [24-Hour Guidelines (1310082101)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310082101)
 
-### Environment  
-- Air Quality Index  
-- GHG Emissions  
-- Water Usage: 3810025001  
+### 🌱 Environment
+- [Air Quality Index (CAAQS)](https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/air-quality-health-index.html)
+- [GHG Emissions](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3810024901)
+- [Water Usage (3810025001)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3810025001)
 
-### Social  
-- Sense of Belonging: 4510005201  
-- Someone to Count On: 4510005001  
-- Belonging to Canada: 4510007701
+### 🤝 Social Connectedness
+- [Sense of Belonging (4510005201)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510005201)
+- [Someone to Count On (4510005001)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510005001)
+- [Belonging to Canada (4510007701)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510007701)
+
 
 ---
 
